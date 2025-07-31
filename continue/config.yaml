@@ -10,6 +10,7 @@ models:
     model: costa/auto
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false 
     capabilities:
       - tool_use
   - name: Qwen3 Coder
@@ -19,6 +20,8 @@ models:
     apiKey: REPLACE_WITH_YOUR_API_KEY
     capabilities:
       - tool_use
+    roles:
+      - autocomplete
   - name: Qwen3 32b
     provider: openai
     model: qwen3-32b

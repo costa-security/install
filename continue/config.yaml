@@ -12,16 +12,37 @@ models:
     apiKey: REPLACE_WITH_YOUR_API_KEY
     capabilities:
       - tool_use
-  - name: Qwen3 Coder
+  - name: Claude Sonnet 3.7
     provider: openai
-    model: qwen3-coder
+    model: claude-sonnet-3.7
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
     capabilities:
       - tool_use
-  - name: Qwen3 32b
+  - name: Claude Sonnet 4
     provider: openai
-    model: qwen3-32b
+    model: claude-sonnet-4
+    apiBase: https://ai.costa.app/api/v1
+    apiKey: REPLACE_WITH_YOUR_API_KEY
+    capabilities:
+      - tool_use
+  - name: Gemini 2.5 Flash
+    provider: openai
+    model: gemini-2.5-flash
+    apiBase: https://ai.costa.app/api/v1
+    apiKey: REPLACE_WITH_YOUR_API_KEY
+    capabilities:
+      - tool_use
+  - name: Gemini 2.5 Pro
+    provider: openai
+    model: gemini-2.5-pro
+    apiBase: https://ai.costa.app/api/v1
+    apiKey: REPLACE_WITH_YOUR_API_KEY
+    capabilities:
+      - tool_use
+  - name: GPT 4.1
+    provider: openai
+    model: gpt-4.1
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
     capabilities:
@@ -40,37 +61,16 @@ models:
     apiKey: REPLACE_WITH_YOUR_API_KEY
     capabilities:
       - tool_use
-  - name: GPT 4.1
+  - name: Qwen3 32b
     provider: openai
-    model: gpt-4.1
+    model: qwen3-32b
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
     capabilities:
       - tool_use
-  - name: Gemini 2.5 Flash
+  - name: Qwen3 Coder
     provider: openai
-    model: gemini-2.5-flash
-    apiBase: https://ai.costa.app/api/v1
-    apiKey: REPLACE_WITH_YOUR_API_KEY
-    capabilities:
-      - tool_use
-  - name: Claude Sonnet 3.7
-    provider: openai
-    model: claude-sonnet-3.7
-    apiBase: https://ai.costa.app/api/v1
-    apiKey: REPLACE_WITH_YOUR_API_KEY
-    capabilities:
-      - tool_use
-  - name: Claude Sonnet 4
-    provider: openai
-    model: claude-sonnet-4
-    apiBase: https://ai.costa.app/api/v1
-    apiKey: REPLACE_WITH_YOUR_API_KEY
-    capabilities:
-      - tool_use
-  - name: Gemini 2.5 Pro
-    provider: openai
-    model: gemini-2.5-pro
+    model: qwen3-coder
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
     capabilities:

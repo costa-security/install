@@ -47,6 +47,13 @@ models:
     apiKey: REPLACE_WITH_YOUR_API_KEY
     capabilities:
       - tool_use
+  - name: kimi-k2
+    provider: openai
+    model: kimi-k2-instruct
+    apiBase: https://ai.costa.app/api/v1
+    apiKey: REPLACE_WITH_YOUR_API_KEY
+    capabilities:
+      - tool_use
   - name: Llama 4 Maverick
     provider: openai
     model: llama-4-maverick-17b-128e-instruct

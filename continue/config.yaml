@@ -13,7 +13,7 @@ models:
     useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
-  - name: Costa Orbit
+  - name: 💫 Costa Orbit
     provider: openai
     model: costa/orbit
     apiBase: https://ai.costa.app/api/v1
@@ -21,7 +21,7 @@ models:
     useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
-  - name: Costa Nebula
+  - name: 💫 Costa Nebula
     provider: openai
     model: costa/nebula
     apiBase: https://ai.costa.app/api/v1

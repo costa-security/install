@@ -5,18 +5,36 @@ name: Costa Assistant
 version: 0.1.0
 schema: v1
 models:
-  - name: 💫 Costa Auto Router
+  - name: 💫 Costa Auto
     provider: openai
     model: costa/auto
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
-  - name: Claude Sonnet 3.7
+  - name: Costa Orbit
     provider: openai
-    model: claude-sonnet-3.7
+    model: costa/orbit
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
+    capabilities:
+      - tool_use
+  - name: Costa Nebula
+    provider: openai
+    model: costa/nebula
+    apiBase: https://ai.costa.app/api/v1
+    apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
+    capabilities:
+      - tool_use
+  - name: Claude 4.5 Sonnet
+    provider: openai
+    model: claude-sonnet-4.5
+    apiBase: https://ai.costa.app/api/v1
+    apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
   - name: Claude Sonnet 4
@@ -24,6 +42,15 @@ models:
     model: claude-sonnet-4
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
+    capabilities:
+      - tool_use
+  - name: GPT 5
+    provider: openai
+    model: gpt-5
+    apiBase: https://ai.costa.app/api/v1
+    apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
   - name: Gemini 2.5 Flash
@@ -31,6 +58,7 @@ models:
     model: gemini-2.5-flash
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
   - name: Gemini 2.5 Pro
@@ -38,6 +66,7 @@ models:
     model: gemini-2.5-pro
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
   - name: GPT 4.1
@@ -45,6 +74,7 @@ models:
     model: gpt-4.1
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
   - name: kimi-k2
@@ -52,6 +82,7 @@ models:
     model: kimi-k2-instruct
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
   - name: Llama 4 Maverick
@@ -59,20 +90,7 @@ models:
     model: llama-4-maverick-17b-128e-instruct
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
-    capabilities:
-      - tool_use
-  - name: o4 Mini
-    provider: openai
-    model: o4-mini
-    apiBase: https://ai.costa.app/api/v1
-    apiKey: REPLACE_WITH_YOUR_API_KEY
-    capabilities:
-      - tool_use
-  - name: Qwen3 32b
-    provider: openai
-    model: qwen3-32b
-    apiBase: https://ai.costa.app/api/v1
-    apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
   - name: Qwen3 Coder
@@ -80,6 +98,7 @@ models:
     model: qwen3-coder
     apiBase: https://ai.costa.app/api/v1
     apiKey: REPLACE_WITH_YOUR_API_KEY
+    useLegacyCompletionsEndpoint: false
     capabilities:
       - tool_use
 

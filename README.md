@@ -29,6 +29,32 @@ After installation, the Costa configuration will be automatically added to your 
 - **Multiple AI Models**: Access to Gemini, Claude, GPT, and Llama models
 - **Tool Use**: Enhanced capabilities for code generation and analysis
 
+## Installation for Claude Code
+
+### Prerequisites
+1. **Claude Code**: Install Claude Code from [Claude Code](https://claude.ai/code)
+2. **Costa API Key**: Get your API key from [Costa](https://costa.security)
+
+### Quick Install
+
+#### Mac / Linux
+```bash
+curl -fsSL https://raw.githubusercontent.com/costa-security/install/main/claude/init.sh | bash -s -- <your-api-key>
+```
+
+#### Windows
+```powershell
+powershell -ExecutionPolicy Bypass -Command "& ([scriptblock]::Create((Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/costa-security/install/main/claude/init.ps1' -UseBasicParsing).Content)) -ApiKey '<your-api-key>'"
+```
+
+Replace `<your-api-key>` with your actual Costa API key (format: `csai-ca-abc123def...`)
+
+### Configuration
+After installation, the Costa configuration will be automatically added to your Claude Code setup at `~/.claude/settings.json`. The configuration includes:
+- **💫 Costa Auto Router**: Automatically selects the best AI model for your task
+- **Environment Variables**: Pre-configured environment variables for Claude Code
+- **Always Thinking**: Enabled by default for continuous assistance
+
 ## Support
 - **Documentation**: [Costa Docs](https://docs.costa.security)
 - **Community**: [Discord](https://discord.com/invite/B6NPUAgYmH)
